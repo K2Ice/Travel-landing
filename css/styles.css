@@ -185,4 +185,134 @@ button {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+.main {
+  background-color: #F7F7F7;
+}
+
+.box-form {
+  position: relative;
+  background-color: #fff;
+  padding: 60px 48px;
+  border-radius: 0 20px 20px 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 154px;
+}
+.form .togglers {
+  bottom: 100%;
+  left: 0;
+  position: absolute;
+  display: inline-flex;
+  padding: 10px 10px 24px;
+  border-radius: 25px 25px 0 0;
+  background-color: #fff;
+  z-index: 2;
+}
+.form .togglers .form-flight-toggle, .form .togglers .form-hotel-toggle {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  gap: 5px;
+  color: #000;
+  border-radius: 25px;
+  background-color: transparent;
+}
+.form .togglers .form-flight-toggle.active, .form .togglers .form-hotel-toggle.active {
+  background-color: rgba(62, 134, 245, 0.2);
+}
+.form .togglers .form-flight-toggle .toggle-icon, .form .togglers .form-hotel-toggle .toggle-icon {
+  width: 25px;
+  height: 25px;
+}
+.form .cities,
+.form .dates {
+  display: flex;
+  padding: 0 22px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  border-radius: 25px;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
+}
+.form .cities .cities-from-label,
+.form .cities .cities-to-label,
+.form .dates .cities-from-label,
+.form .dates .cities-to-label {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .cities .city-from-select,
+.form .cities .city-to-select,
+.form .dates .city-from-select,
+.form .dates .city-to-select {
+  font-size: 24px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form .cities .city-from-select:focus,
+.form .cities .city-to-select:focus,
+.form .dates .city-from-select:focus,
+.form .dates .city-to-select:focus {
+  outline: none;
+}
+.form .cities-icon,
+.form .dates-icon {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+}
+.form .cities-icon img,
+.form .dates-icon img {
+  width: 100%;
+  height: 100%;
+}
+.form .cities {
+  max-width: 382px;
+}
+.form .dates {
+  max-width: 477px;
+}
+.form .dates-leave, .form .dates-return {
+  flex-grow: 1;
+}
+.form .date-input-wrapper {
+  position: relative;
+}
+.form .date-text {
+  font-size: 24px;
+  line-height: 1;
+  line-break: strict;
+}
+.form input[type=date] {
+  opacity: 0;
+  position: absolute;
+}
+.form .btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3E86F5;
+  border: none;
+  min-width: 154px;
+  border-radius: 65px;
+}
+.form .btn-submit .box-img-mfyGlass {
+  width: 50px;
 }/*# sourceMappingURL=styles.css.map */

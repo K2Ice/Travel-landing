@@ -62,6 +62,79 @@
           </div>
         </div>
       </section>
+      <section class="main-form-wrapper container">
+        <div class="box-form">
+          <form action="" id="travel-form" class="form">
+            <div class="togglers">
+              <button type="button" class="form-flight-toggle active">
+                <img
+                  src="./pic/flight-icon.png"
+                  alt=""
+                  class="toggle-icon"
+                /><span>Flight</span>
+              </button>
+              <button type="button" class="form-hotel-toggle">
+                <img
+                  src="./pic/hotel-icon.png"
+                  alt=""
+                  class="toggle-icon"
+                /><span>Hotel</span>
+              </button>
+            </div>
+            <div class="cities">
+              <div class="cities-from">
+                <label for="city-from" class="cities-from-label"
+                  >Leaving from </label
+                ><br />
+                <select name="cityFrom" id="city-from" class="city-from-select">
+                  <option value="Dubai">Dubai</option>
+                  <option value="Warsaw">Warsaw</option>
+                  <option value="Berlin">Berlin</option>
+                </select>
+              </div>
+              <span class="cities-icon"
+                ><img src="./pic/cities-plane-icon.png" alt=""
+              /></span>
+              <div class="cities-to">
+                <label for="city-to" class="cities-to-label">Going to</label
+                ><br />
+                <select name="cityto" id="city-to" class="city-to-select">
+                  <option value="New York">New York</option>
+                  <option value="Madrid">Madrid</option>
+                  <option value="London">London</option>
+                </select>
+              </div>
+            </div>
+            <div class="dates">
+              <div class="dates-leave">
+                <label for="dateLeave" class="dates-leave-label">Leave</label
+                ><br />
+                <div class="date-input-wrapper">
+                  <p id="date-leave-text" class="date-text">DATE LEAVE</p>
+                  <input type="date" name="dateLeave" id="dateLeave" />
+                </div>
+              </div>
+              <span class="dates-icon"
+                ><img src="./pic/dates-calendar-icon.png" alt=""
+              /></span>
+              <div class="dates-return">
+                <label for="dateReturn" class="dates-return-label"
+                  >Going to</label
+                ><br />
+                <div class="date-input-wrapper">
+                  <p id="date-to-text" class="date-text">DATE TO</p>
+                  <input type="date" name="dateReturn" id="dateReturn" />
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn-submit">
+              <div class="box-img-mfyGlass">
+                <img src="./pic/search-icon.png" alt="" />
+              </div>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
