@@ -1,0 +1,95 @@
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+
+  &-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .brand{
+      font-weight: 800;
+      font-size: 48px;
+      color:  $whitePrimary;
+    }
+    
+    .list-nav{
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      color:  $whitePrimary;
+      overflow: hidden;
+      @include mq(xl){
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transition: .3s;
+        background-color: rgba(0,0,0,0.9);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        &.show{
+          width: 190px;
+          height:290px;
+          border-radius: 0 0 20px 20px;
+        }
+      }
+
+
+      .link-nav{
+        display: block;
+        padding: 10px;
+        color:  $whitePrimary;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 10px;
+
+
+        &:hover {
+          background-color: $whitePrimary;
+          color: $bluePrimary;
+        }
+
+        @include mq(xl){
+          border-radius: 0;
+        }
+      }
+
+      .list-item-nav:last-child .link-nav{
+        border: 1px solid;
+        border-radius: 20px;
+        background-color:  $whitePrimary;
+        color: #3E86F5;
+        padding: 14px 44px;
+        transition: none;
+
+        @include mq(xl){
+          border-radius: 0;
+        }
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+    .btn-mobile {
+      display: none;
+      font-size: 40px;
+      color: white;
+      @include mq(xl){
+        display: block;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,55 @@
+.header-heading{
+  max-width: 820px;
+  color: $whitePrimary;
+  &-top{
+    margin-bottom: 40px;
+    text-align: center;
+    color: $whitePrimary;
+    font-weight: 600;
+    font-size: 64px;
+
+    @include mq(md) {
+      font-size: 48px;
+    }
+  }
+
+  &-bottom{
+    text-align: center;
+    color: $whitePrimary;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
+    @include mq(md) {
+      font-size: 22px;
+    }
+  }
+}
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+.box-img-bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.section-hero::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $blackBgcPrimary;
+  z-index: -1;
+}
