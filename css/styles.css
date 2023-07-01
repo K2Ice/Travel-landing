@@ -646,4 +646,36 @@ button {
   top: 15%;
   right: 10%;
   border-radius: 25px;
+}
+
+.discount-pic-wrapper {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.discount-pic-wrapper .discount-pic {
+  width: 100%;
+  height: 100%;
+}
+.discount-pic-wrapper .discount-pic-heading {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 70%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+}
+.discount-pic-wrapper .discount-pic-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  border: none;
+  padding: 25px 35px;
+  color: #3E86F5;
+  font-weight: 600;
+  border-radius: 25px;
 }/*# sourceMappingURL=styles.css.map */
