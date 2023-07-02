@@ -53,6 +53,7 @@
         text-align: center;
         transition: 0.3s;
         border-radius: 10px;
+        padding: 10px 30px;
 
 
         &:hover {
@@ -72,6 +73,7 @@
         color: #3E86F5;
         padding: 14px 44px;
         transition: none;
+        width: 188px;
 
         @include mq(xl){
           border-radius: 0;

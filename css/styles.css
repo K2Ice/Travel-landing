@@ -93,6 +93,7 @@ button {
   text-align: center;
   transition: 0.3s;
   border-radius: 10px;
+  padding: 10px 30px;
 }
 .header-nav .list-nav .link-nav:hover {
   background-color: #fff;
@@ -110,6 +111,7 @@ button {
   color: #3E86F5;
   padding: 14px 44px;
   transition: none;
+  width: 188px;
 }
 @media (max-width: 1200px) {
   .header-nav .list-nav .list-item-nav:last-child .link-nav {
