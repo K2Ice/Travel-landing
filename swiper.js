@@ -1,6 +1,11 @@
 const opinions = new Swiper(".opinions", {
-  slidesPerView: 2,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
 
   navigation: {
     nextEl: ".swiper-button-next",

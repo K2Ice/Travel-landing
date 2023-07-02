@@ -1,13 +1,28 @@
 .promo{
+  margin: 0 100px;
   display: flex;
+  gap: 100px;
   justify-content: flex-end;
   height: 100vh;
 
+  @include mq(xl){
+    height: unset;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @include mq(md){
+    width: 70%;
+    gap: 70px;
+  }
+
   &-img-wrapper{
     position: relative;
-    margin-right: 100px;
     margin-left: 0;
     height: 100%;
+
 
     .promo-img{
       width: 100%;
@@ -22,6 +37,11 @@
       background-color: $whitePrimary;
       border-radius: 35px;
       min-width: 180px;
+
+      @include mq(md){
+       min-width: 140px;
+      padding: 15px;
+      }
       p{
         text-align: center;
         line-height: 1;
@@ -31,11 +51,18 @@
         font-size: 36px;
         color: $bluePrimary;
         font-weight: 600;
+
+         @include mq(md){
+           font-size: 24px;
+        }
       }
 
       p:last-child{
         font-size: 18px;
         font-weight: 300;
+        @include mq(md){
+          font-size: 16px;
+        }
       }
     }
 
@@ -43,17 +70,27 @@
       top: 10%;
       left: 100%;
       transform: translateX(-50%);
+
+      @include mq(xl){
+        left: 90%;
+      }
     }
     .promo-img-bracket:nth-of-type(2){
       top: 50%;
       left: 0;
       transform: translateX(-50%);
-
+      @include mq(xl){
+        left: 10%;
+      }
     }
     .promo-img-bracket:nth-of-type(3){
       top: 70%;
       left: 100%;
       transform: translateX(-50%);
+
+      @include mq(xl){
+        left: 90%;
+      }
     }
 
   }
@@ -62,10 +99,22 @@
     width: 50%;
     align-self: center;
 
+    @include mq(xl){
+      width: 100%;
+    }
+
     &-heading{
       font-size: 48px;
       line-height: 1.5;
       margin-bottom: 20px;
+
+      @include mq(xl){
+        text-align: center;
+      }
+
+      @include mq(md){
+        font-size: 40px;
+      }
     }
 
     &-text{
@@ -83,6 +132,10 @@
       border: none;
       border-radius: 10px;
       color: $whitePrimary;
+
+      @include mq(md){
+        padding: 18px 20px;
+      }
     }
   }
 

@@ -1,12 +1,22 @@
 .footer-info{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 500;
   margin-top: 100px;
+
+  @include mq(md){
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 
   &-rights{
     font-size: 20px;
     color: $blackBgcPrimary;
+
+    @include mq(md){
+      text-align: center;
+    }
   }
 
   &-menu{
@@ -14,5 +24,10 @@
     gap: 50px;
     list-style: none;
     font-size: 24px;
+
+    @include mq(xl){
+      font-size: 20px;
+      gap: 20px;
+    }
   }
 }

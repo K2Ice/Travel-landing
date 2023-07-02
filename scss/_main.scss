@@ -7,6 +7,19 @@
   background-color: $whitePrimary;
   padding: 60px 48px;
   border-radius: 0 20px 20px 20px;
+
+  @include mq(xl){
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  @include mq(md){
+    width: 90%;
+  }
+
+  @include mq(sm){
+    width: 100%;
+  }
 }
 
 .form{
@@ -14,6 +27,10 @@
   justify-content: space-between;
   gap:40px;
   min-height: 154px;
+
+  @include mq(xl){
+    flex-direction: column;
+  }
 
   .togglers{
     bottom: 100%;
@@ -59,11 +76,19 @@
     gap: 30px;
     flex-grow: 1;
 
+    @include mq(xl){
+      padding: 20px;
+    }
+
 
     .cities-from-label,
     .cities-to-label{
       font-size: 18px;
-      color: $blackBgcPrimary
+      color: $blackBgcPrimary;
+
+      @include mq(sm){
+        font-size: 16px;
+      }
     }
 
     .city-from-select,
@@ -71,6 +96,10 @@
       font-size: 24px;
       border: none;
       appearance: none;
+
+      @include mq(sm){
+        font-size: 20px;
+      }
 
       &:focus{
         outline: none;
@@ -96,14 +125,41 @@
 
   .cities{
     max-width: 382px;
+
+    @include mq(xl){
+      max-width: unset;
+    }
+  }
+
+  .cities-from {
+    @include mq(xl){
+      flex-grow: 1;
+
+      .city-from-select {
+        width: 100%;
+      }
+    }
+  }
+  .cities-to {
+    @include mq(xl){
+      flex-grow: 1;
+
+      .city-to-select {
+        width: 100%;
+      }
+    }
   }
 
   .dates{
     max-width: 477px;
+    @include mq(xl){
+      max-width: unset;
+    }
 
     &-leave,
     &-return{
       flex-grow: 1;
+      width: 170px;
     }
   }
 
@@ -119,6 +175,10 @@
     font-size: 24px;
     line-height: 1;
     line-break: strict;
+    
+    @include mq(sm){
+      font-size: 20px;
+    }
   }
 
   input[type='date']{
@@ -135,8 +195,16 @@
     min-width: 154px;
     border-radius: 65px;
 
+    @include mq(xl){
+      padding: 15px;
+    }
+
     .box-img-mfyGlass {
       width: 50px;
+
+      @include mq(md){
+        width: 30px;
+      }
     }
   
   }

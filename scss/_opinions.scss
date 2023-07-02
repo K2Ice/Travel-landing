@@ -25,11 +25,16 @@
 .opinion{
   position: relative;
   padding: 85px 50px 50px 50px;
+  height: 455px;
   border-radius: 50px;
   background: url(../pic/quote-sign.png);
   background-repeat: no-repeat;
   background-position: center 10%;
   background-color: $whitePrimary;
+
+  @include mq(lg){
+    height: unset
+  }
 
   &-author{
     color: $bluePrimary;
@@ -53,11 +58,16 @@
   bottom: 0;
   left: 50%;
   width: 30%;
+  min-width: 120px;
   transform: translate(-50%, 50%);
   background-color: $whitePrimary;
   text-align: center;
   padding: 10px;
   border-radius: 100px / 75px;
+
+  @include mq(md){
+    max-width: 140px;
+  }
 
   span{
     position: absolute;
